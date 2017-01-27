@@ -7,3 +7,6 @@
 [submodule "sources_non_forked/nordisk"]
 	path = sources_non_forked/nordisk
 	url = https://github.com/kamwitsta/nordisk
+[submodule "sources_forked/YouCompleteMe"]
+	path = sources_forked/YouCompleteMe
+	url = git@github.com:lesthaeghet/YouCompleteMe
