@@ -4,9 +4,9 @@
 [submodule "sources_non_forked/indentpython.vim"]
 	path = sources_non_forked/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
-[submodule "sources_non_forked/YouCompleteMe"]
-	path = sources_non_forked/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe
+[submodule "sources_forked/YouCompleteMe"]
+	path = sources_forked/YouCompleteMe
+	url = https://github.com/lesthaeghet/YouCompleteMe
 [submodule "sources_non_forked/nordisk"]
 	path = sources_non_forked/nordisk
 	url = https://github.com/kamwitsta/nordisk
