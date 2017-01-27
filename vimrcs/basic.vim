@@ -430,3 +430,37 @@ endfunction
 " if has("autocmd")
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+
+au BufNewFile,BufRead *.py,*.wsgi
+    \ set tabstop=4 | 
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
+au BufNewFile,BufRead *.js,*.html,*.css,*.xsl
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+highlight BadWhitespace ctermbg=red guibg=darkred
+"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+match BadWhitespace /\s\+$/
+
+autocmd ColorScheme * highlight BadWhitespace ctermbg=red guibg=darkred
+
+set encoding=utf-8
+
+
+set gfn=Liberation\ Mono\ 10
+
+let mapleader = "\<Space>"
+
+map <leader>b :BufExplorer<cr>
+map <leader>m :MRU<cr>
+map <leader>n :NERDTreeToggle<cr>
+map <leader>z :Goyo<cr>
+
+"command W w !sudo tee %
