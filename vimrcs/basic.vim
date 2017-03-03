@@ -456,7 +456,7 @@ set encoding=utf-8
 
 set gfn=Liberation\ Mono\ 10
 
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
 
 map <leader>b :BufExplorer<cr>
 map <leader>m :MRU<cr>

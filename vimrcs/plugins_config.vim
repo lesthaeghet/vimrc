@@ -173,6 +173,8 @@ autocmd BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
 autocmd BufWinLeave *.py setlocal foldexpr< foldmethod<
 let g:SimpylFold_docstring_preview=1
 let g:SimpylFold_fold_import=0
+set foldlevel=99
+set foldlevelstart=99
 
 let g:ycm_autoclose_preview_windows_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration
